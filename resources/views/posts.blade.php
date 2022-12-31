@@ -22,17 +22,8 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
     <body class="antialiased">
-        <article>
-            <h1><a href="/post">My first post</a></h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam odio in distinctio iure nemo optio earum omnis ex recusandae impedit! Quae voluptates distinctio, ut totam nam nostrum eos facere aperiam?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad magni officiis a vel asperiores fugiat, ipsum eaque unde dolore, recusandae laudantium blanditiis expedita perspiciatis vero commodi assumenda maxime, nostrum qui. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, quo ab doloribus illo rerum repellat omnis voluptates molestias corrupti sed ipsa laboriosam, unde quidem id quasi fugit possimus mollitia. Dolores!</p>
-        </article>
-        <article>
-            <h1><a href="/post">My second post</a></h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam odio in distinctio iure nemo optio earum omnis ex recusandae impedit! Quae voluptates distinctio, ut totam nam nostrum eos facere aperiam?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad magni officiis a vel asperiores fugiat, ipsum eaque unde dolore, recusandae laudantium blanditiis expedita perspiciatis vero commodi assumenda maxime, nostrum qui. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, quo ab doloribus illo rerum repellat omnis voluptates molestias corrupti sed ipsa laboriosam, unde quidem id quasi fugit possimus mollitia. Dolores!</p>
-        </article>
-        <article>
-            <h1><a href="/post">My third post</a></h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam odio in distinctio iure nemo optio earum omnis ex recusandae impedit! Quae voluptates distinctio, ut totam nam nostrum eos facere aperiam?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad magni officiis a vel asperiores fugiat, ipsum eaque unde dolore, recusandae laudantium blanditiis expedita perspiciatis vero commodi assumenda maxime, nostrum qui. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, quo ab doloribus illo rerum repellat omnis voluptates molestias corrupti sed ipsa laboriosam, unde quidem id quasi fugit possimus mollitia. Dolores!</p>
-        </article>
+        @foreach ($posts as $post)
+            {!! $post !!}
+        @endforeach
     </body>
 </html>
