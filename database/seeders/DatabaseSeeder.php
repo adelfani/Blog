@@ -21,9 +21,5 @@ class DatabaseSeeder extends Seeder
             'user_id' => User::factory(),
             'category_id' => Category::factory(),
         ]);
-        // \App\Models\User::factory()->create([
-        //     'name' => 'Test User',
-        //     'email' => 'test@example.com',
-        // ]);
     }
 }
